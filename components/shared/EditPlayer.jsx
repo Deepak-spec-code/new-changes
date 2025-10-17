@@ -252,6 +252,7 @@ import StatusPlayer from "./StatusPlayer";
 
 import { clearStatusMessage } from "@/redux/slices/playerStatusSlice";
 import { resetProfileImageState } from "@/redux/slices/profileImageSlice";
+import PlayerBet from "../pages/players/PlayerBet";
 
 export const EditPlayer = ({
   open = true,
@@ -339,6 +340,7 @@ export const EditPlayer = ({
     { value: "edit", label: "Edit" },
     { value: "load", label: "Upload" },
     { value: "stats", label: "Stats" },
+     { value: "bet", label: "Bet" },
     { value: "challenge", label: "Challenge" },
   ];
 
@@ -424,6 +426,9 @@ export const EditPlayer = ({
                 <PlayerStatsBoxUser userId={selectedPlayer?.id} ladderId={ladder_id} />
               </div>
             </TabsContent>
+             <TabsContent value="bet">
+                <PlayerBet ladderId={ladder_id} selectedPlayer={selectedPlayer} />
+              </TabsContent>
           </Tabs>
         </motion.div>
       </DialogContent>
