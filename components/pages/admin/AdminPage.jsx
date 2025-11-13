@@ -99,10 +99,14 @@ export default function AdminPage() {
       </div>
 
       <ToastContainer position="top-right" autoClose={2500} hideProgressBar theme="dark" />
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 py-6 sm:py-8">
+      {/* <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 py-6 sm:py-8"> */}
+
+       <div className="w-full min-h-screen mx-auto px-4 sm:px-6 lg:px-10 py-6 sm:py-8">
+      
+
         {/* Header strip */}
         <div className="mb-5 sm:mb-7 flex items-center justify-between gap-3">
-          <div className="flex items-center gap-2">
+          <div className="flex  items-center gap-2">
             <div className="inline-flex items-center justify-center h-9 w-9 rounded-xl bg-white/10 backdrop-blur-md ring-1 ring-white/10">
               <Sparkles className="h-5 w-5 text-cyan-300" />
             </div>

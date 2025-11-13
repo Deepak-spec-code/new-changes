@@ -451,7 +451,7 @@ export default function LoginPage() {
             transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
             className="text-lg sm:text-xl md:text-2xl text-white/95 mb-10 max-w-3xl mx-auto leading-relaxed drop-shadow-md"
           >
-            Access your **admin dashboard** to manage real-time rankings, match schedules, and user accounts.
+            Access your admin dashboard to manage real-time rankings, match schedules, and user accounts.
           </motion.p>
         </div>
       </motion.div>
