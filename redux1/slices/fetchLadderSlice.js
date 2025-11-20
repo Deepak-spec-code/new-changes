@@ -15,6 +15,7 @@ export const fetchLadders = createAsyncThunk(
           },
         }
       );
+      console.log("id with login : ", response.data)
       return response.data.data; // this is the array of ladders
 
     } catch (error) {

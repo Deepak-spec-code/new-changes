@@ -519,7 +519,7 @@ const PlayerHeading = ({ demoLadderName }) => {
 
         {/* Name Section */}
         <div className="flex-1">
-          <div className="flex items-center justify-center sm:justify-start gap-2 flex-wrap">
+          <div className="flex text-white items-center justify-center sm:justify-start gap-2 flex-wrap">
             {isEditingName ? (
               <input
                 className="text-2xl sm:text-4xl font-bold border-b-2 border-purple-600 focus:outline-none px-1"
@@ -542,7 +542,7 @@ const PlayerHeading = ({ demoLadderName }) => {
               </>
             )}
           </div>
-          <span className="text-sm sm:text-base text-center sm:text-start md:text-lg font-semibold mt-1 block">
+          <span className="text-sm text-white sm:text-base text-center sm:text-start md:text-lg font-semibold mt-1 block">
             Tap your name to move, edit details, update status or upload avatar ★★★
           </span>
         </div>

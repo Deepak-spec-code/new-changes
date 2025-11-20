@@ -1,7 +1,8 @@
 
+
 // store.js
 import { configureStore } from "@reduxjs/toolkit";
-import storageSession from "redux-persist/lib/storage/session"; 
+import storageSession from "redux-persist/lib/storage/session"; // 👈 sessionStorage
 import { persistReducer, persistStore } from "redux-persist";
 import { combineReducers } from "redux";
 
@@ -30,7 +31,7 @@ import changePasswordReducer from "./slices/changePassword"
 
 const persistConfig = {
   key: "root",
-  storage: storageSession,
+  storage: storageSession, // 👈 ab sessionStorage
   whitelist: [
     "user",
     "player",
